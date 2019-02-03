@@ -1,0 +1,121 @@
+/*
+ * CS312 Assignment 1.
+ * On my honor, Ian Martin, this programming assignment is my own work.
+ *
+ * A program to print out the lyrics to the
+ * children's song, "There was an old woman".
+ *
+ *  Name: Ian Martin			
+ *  email address: ianmartinrocks@gmail.com
+ *  UTEID: ijm485
+ *  Section 5 digit ID: 50724
+ *  Grader name: Divya Manohar
+ *  Number of slip days used on this assignment: 1
+ */
+
+public class Song {
+	
+	// print out the lyrics of "There was an old woman ... "
+	public static void main(String[] args) {
+			FlyVerse();
+			SpiderVerse();
+			BirdVerse();
+			CatVerse();
+			DogVerse();
+			GoatVerse();
+			CowVerse();
+			HorseVerse();
+			
+	}
+	//Verse starting with the horse (has no repeated lines)
+	public static void HorseVerse() {
+		System.out.println("There was an old woman who swallowed a horse,");
+		System.out.println("She died of course.");
+		
+	}
+	//Verse starting with the cow
+	public static void CowVerse() {
+		System.out.println("There was an old woman who swallowed a cow,");
+		System.out.println("I don't know how she swallowed a cow.");
+		CowAddon();
+	}
+	//Verse starting with the goat
+	public static void GoatVerse() {
+		System.out.println("There was an old woman who swallowed a goat,");
+		System.out.println("She just opened her throat to swallow a goat.");
+		GoatAddon();
+	}
+	//Verse starting with the dog
+	public static void DogVerse() {
+		System.out.println("There was an old woman who swallowed a dog,");
+		System.out.println("What a hog to swallow a dog.");
+		DogAddon();
+	}
+	//Verse starting with the cat
+	public static void CatVerse() {
+		System.out.println("There was an old woman who swallowed a cat,");
+		System.out.println("Imagine that to swallow a cat.");
+		CatAddon();
+	}
+	//Verse starting with the bird
+	public static void BirdVerse() {
+		System.out.println("There was an old woman who swallowed a bird,");
+		System.out.println("How absurd to swallow a bird.");
+		BirdAddon();
+	}
+	//Verse starting with the spider
+	public static void SpiderVerse() {
+		System.out.println("There was an old woman who swallowed a spider,");
+		System.out.println("That wriggled and iggled and jiggled inside her.");
+		SpiderAddon();
+	}
+	//Verse starting with the fly
+	public static void FlyVerse() {
+		System.out.println("There was an old woman who swallowed a fly.");
+		FlyAddon();
+		
+	}
+	//Repeated lines and reasoning for cow verse
+	public static void CowAddon() {
+		System.out.println("She swallowed the cow to catch the goat,");
+		GoatAddon();
+		
+	}
+	//Repeated lines and reasoning for goat verse
+	public static void GoatAddon() {
+		System.out.println("She swallowed the goat to catch the dog,");
+		DogAddon();
+		
+	}
+	//Repeated lines and reasoning for dog verse
+	public static void DogAddon() {
+		System.out.println("She swallowed the dog to catch the cat,");
+		CatAddon();
+		
+	}
+	//Repeated lines and reasoning for cat verse
+	public static void CatAddon() {
+		System.out.println("She swallowed the cat to catch the bird,");
+		BirdAddon();
+	}
+	//Repeated lines and reasoning for bird verse
+	public static void BirdAddon() {
+		System.out.println("She swallowed the bird to catch the spider,");
+		SpiderAddon();
+		
+	}
+	//Repeated lines and reasoning for spider verse
+	public static void SpiderAddon() {
+		System.out.println("She swallowed the spider to catch the fly,");
+		FlyAddon();
+		
+	}
+	//Reasoning for fly verse (No repeated lines)
+	public static void FlyAddon() {
+		System.out.println("I don't know why she swallowed that fly,");
+		System.out.println("Perhaps she'll die.\n");
+		
+	}
+		
+}
+
